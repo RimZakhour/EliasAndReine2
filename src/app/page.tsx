@@ -453,7 +453,7 @@ if (submitted) {
 
     {/* Reply‑by + persons */}
     <p className="font-serif italic text-center mb-1">
-      Please reply before <strong>July 02, 2025</strong>
+      Please reply before <strong>August 08, 2025</strong>
     </p>
     <p className="font-serif italic text-center mb-8">
       Number of persons: 4
