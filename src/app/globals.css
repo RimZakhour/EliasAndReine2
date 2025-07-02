@@ -52,6 +52,7 @@ body {
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
+  opacity: 0.9;
 }
 
 #bg-video {
@@ -109,6 +110,7 @@ body {
   transform: translateY(0);
 }
 #hero-section {
+  opacity: 0.8;
   margin-top: 77vh;
   width: 100vw;
   padding: 50px 0;
@@ -254,6 +256,7 @@ body {
 }
 /* full‑width “paper” sections with brush‑stroke top & bottom */
 .animated-section {
+  opacity: 0.8;
   /* span the full viewport width */
   width: 100vw !important;
   max-width: none   !important;
@@ -303,6 +306,7 @@ body {
 
 /* Card base styles */
 .card {
+  opacity: 0.8;
   border-radius: 20px;
   max-width: 1000px;
   background:
@@ -315,6 +319,7 @@ body {
 /* ─── DETAIL SECTION (mirrors hero styling) ───────────────────── */
 
 .detail-section {
+  opacity: 0.8;
   /* full‑bleed overlay + background */
   width: 100vw !important;
   max-width: none !important;
@@ -454,6 +459,7 @@ body {
 }
 
 .rsvp-section {
+  opacity: 0.8;
   /* full‑bleed panel */
   width: 100vw !important;
   max-width: none !important;
