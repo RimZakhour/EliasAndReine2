@@ -76,19 +76,26 @@ body {
 }
 
 #start-btn {
-  padding: 20px 40px;
-  font-size: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #333;
-  border: none;
-  border-radius: 10px;
+  width: 100px;               /* Diameter of the circle */
+  height: 100px;
+  border-radius: 50%;         /* Make it circular */
+  background-color: transparent;
+  border: 3px solid white !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #start-btn:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+  transform: scale(1.05);
 }
 
 /* Content container (visibility toggled via JS) */
@@ -574,9 +581,9 @@ body {
   margin: 30px auto 0;
   padding: 10px 20px;
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid #000 !important;
   border-radius: 8px;
-  color: #000;
+  color: #000 !important;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -649,5 +656,65 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
+}
+/* Force all input borders black */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border-color: black !important;
+  color: black !important; /* text inside inputs black */
+}
+
+/* Force all input focus borders black */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border-color: black !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px black !important; /* optional focus ring */
+}
+
+/* Buttons with text "Add Person" and "Submit" - using class selectors */
+/* Add Person button */
+button.add-person-btn,
+button[type="button"][disabled]:not(:hover), /* in case disabled */
+button[type="button"]:not(:disabled) {
+  border-color: black !important;
+  color: black !important;
+  background-color: white !important; /* if you want white background */
+}
+
+/* Submit button */
+button[type="submit"] {
+  border-color: black !important;
+  color: black !important;
+  background-color: white !important;
+}
+
+/* In case you want to target any button with black border */
+button {
+  border-color: black !important;
+}
+
+/* Also target inputs inside your form container */
+.rsvp-form-container input,
+.rsvp-form-container button {
+  border-color: black !important;
+  color: black !important;
+}
+
+/* To override Tailwind's !border-black you can add !important here */
+input,
+button {
+  border-color: black !important;
+  color: black !important;
+}
+
+/* Make placeholder text black */
+input::placeholder,
+textarea::placeholder {
+  color: black !important;
 }
 
