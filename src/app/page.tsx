@@ -543,7 +543,7 @@ export default function Home() {
         value={g.name}
         onChange={(e) => updateGuestName(i, e.target.value)}
         placeholder={i === 0 ? "Your Name" : `Guest ${i + 1} Name`}
-        className="w-full h-[50px] border-2 border-black px-5 text-lg placeholder-black/60 focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold bg-white shadow-md"
+  className="w-full h-[50px] border-2 !border-black focus:!border-black focus:ring-0 px-5 text-[16px] placeholder-black/60 bg-white shadow-md"
         required
       />
       {i > 0 && (
