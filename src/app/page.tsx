@@ -230,14 +230,18 @@ export default function Home() {
 
       {/* Text inside the heart */}
       <div className="z-10 text-center px-4">
-        <h2 className="text-2xl font-script text-white mb-2">Thank You!</h2>
-        <p className="font-serif text-white">Your RSVP has been received.</p>
-        <button
-          onClick={() => setSubmitted(false)}
-          className="mt-4 border border-white px-4 py-2 rounded-lg text-black hover:bg-black hover:text-white transition"
-        >
-          Close
-        </button>
+       <h2 className="text-3xl font-script text-pink-300 drop-shadow-md mb-2">
+  Thank You!
+</h2>
+<p className="font-serif text-pink-200 drop-shadow-sm">
+  Your RSVP has been received.
+</p>
+     <button
+  onClick={() => setSubmitted(false)}
+  className="mt-4 border border-pink-300 text-pink-300 px-6 py-2 rounded-lg hover:bg-pink-300 hover:text-white transition"
+>
+  Close
+</button>
       </div>
     </div>
   </div>
