@@ -454,7 +454,7 @@ export default function Home() {
                      c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
           </svg>
         </button>
-       <p className="account-code">Acc#20738868-01</p>
+       <p className="account-code">20738868-01</p>
       
        </div>
      <div className="account-block">
