@@ -439,7 +439,7 @@ export default function Home() {
         <button
           className="copy-btn"
           onClick={() =>
-            navigator.clipboard.writeText("Acc#20738868-01")
+            navigator.clipboard.writeText("20738868-01")
           }
           aria-label="Copy account number"
         >
